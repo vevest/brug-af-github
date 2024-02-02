@@ -8,13 +8,30 @@
 
 h2, h3 {
     font-family: 'Roboto-Bold';
+    color: var(--tekst-color);
+    font-size: 30px;
 
 }
 
 p{
     font-family: 'Roboto-reg';
+    color: var(--tekst-color);
+    font-size: 18px;
 }
 
+.icon{
+    width: 100%;
+}
+
+.box1{
+    background-color: var(--lysegrøn-color);
+}
+
+.box1 h2, h3{
+    color:white;
+    text-align: center;
+    margin: 15px;
+}
 
 
 
