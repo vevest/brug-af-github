@@ -1,0 +1,14 @@
+html{
+    --lys-color: #F3F4EF; /*baggrund farve, hører til body*/
+    --lysegrøn-color: #779882; /*font farve, gælder alle fonte*/
+    --mørkegrøn-color: #425348; /*boxshadow farve til links*/
+    --tekst-color: #3C3C3C;
+
+}
+
+/* når i skal skrive en farve skriv ex: 
+
+p{
+    color: var(----primary-color);
+}
+*/

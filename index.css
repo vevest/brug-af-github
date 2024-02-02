@@ -1,0 +1,30 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h2, h3 {
+    font-family: 'Roboto-Bold';
+
+}
+
+p{
+    font-family: 'Roboto-reg';
+}
+
+
+
+
+@font-face {
+    font-family: "Roboto-reg";
+    src: url(Opgave/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-bold";
+    src: url(Opgave/Roboto/Roboto-Bold.ttf);
+}
+
