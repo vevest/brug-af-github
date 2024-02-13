@@ -1,3 +1,14 @@
+/*
+Generelle regler for font og farver
+Body 
+    -Header
+    -Billed
+    -Content
+    -Footer
+*/
+
+
+
 
 *{
     margin: 0;
@@ -5,6 +16,17 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+@font-face {
+    font-family: "Roboto-reg";
+    src: url(Opgave/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-bold";
+    src: url(Opgave/Roboto/Roboto-Bold.ttf);
+}
+
 
 h2 {
     font-family: 'Roboto-Bold';
@@ -25,6 +47,37 @@ p{
     font-size: 18px;
 }
 
+header{
+    background-color: var(--lysegrøn-color);
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    padding: 2%;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--tekst-color);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Roterer første linje */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fjerner midterste linje */
+  .change .bar2 {opacity: 0;}
+  
+  /* Roterer sidste linje */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  
 .icon{
     width: 100%;
 }
@@ -46,8 +99,11 @@ p{
     padding: 5%;
 }
 
-.container{
+.container1{
     margin-left: 15%;
+    background-color: var(--mørkegrøn-color);
+    padding: 10%;
+    border-radius: 50px;
 }
 
 #box2{
@@ -70,31 +126,32 @@ p{
 }
 
 
-@font-face {
-    font-family: "Roboto-reg";
-    src: url(Opgave/Roboto/Roboto-Regular.ttf);
-}
-
-@font-face {
-    font-family: "Roboto-bold";
-    src: url(Opgave/Roboto/Roboto-Bold.ttf);
-}
-
-
-/* Style inputs with type="text", select elements and textareas */
+/* Input felter med tekst */
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+
+/*e-mail knap*/
+  input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
   }
   
-  /* Style the submit button with a specific background color etc */
-  input[type=tilmeld] {
+  /* Tilmeld knap */
+  input[type=submit] {
     background-color:var(--lysegrøn-color);
     color: white;
     padding: 12px 20px;
@@ -103,14 +160,21 @@ input[type=text], select, textarea {
     cursor: pointer;
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=tilmeld]:hover {
-    background-color: var(--mørkegrøn-color);
-  }
+ 
   
-  /* Add a background color and some padding around the form */
+  /* baggrund på formular */
   .container {
     border-radius: 5px;
-    background-color: var(--mørkegrøn-color);
     padding: 20px;
+    margin-left: 95%;
+  }
+
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    background-color: var(--mørkegrøn-color);
+    color: var(--lys-color);
+    padding: 5%;
+    font-size: 20px;
   }
